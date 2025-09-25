@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience — May San</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  <nav class="nav">
+    <div class="brand"><span class="brand-accent">MAY</span> SAN</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html" class="active">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <h1 class="glitch" data-text="EXPERIENCE">EXPERIENCE</h1>
+      <p class="muted">Click an item to view details and responsibilities.</p>
+    </header>
+
+    <section class="exp-grid">
+      <article class="exp-card pre-reveal slide-left" data-type="exp" data-id="exp1" tabindex="0">
+        <img src="images/orientation.jpg" alt="Orientation">
+        <div class="exp-body"><h3>Freshmen Leader & Partner (B2028 & B2029)</h3><p>Guided new students to adapt smoothly and coordinated mentoring activities.</p></div>
+      </article>
+
+      <article class="exp-card pre-reveal slide-up" data-type="exp" data-id="exp2" tabindex="0">
+        <img src="images/rectorcup.jpg" alt="Rector Cup">
+        <div class="exp-body"><h3>Event Committee — Rector Cup</h3><p>Ensured logistics and equipment availability for campus competition.</p></div>
+      </article>
+
+      <article class="exp-card pre-reveal slide-right" data-type="exp" data-id="exp3" tabindex="0">
+        <img src="images/bifest.jpg" alt="Bifest">
+        <div class="exp-body"><h3>Committee — Binus Festival (Bifest)</h3><p>Supported Single Sign-On and event operations to deliver a smooth festival.</p></div>
+      </article>
+
+      <article class="exp-card pre-reveal slide-left" data-type="exp" data-id="exp4" tabindex="0">
+        <img src="images/bca.jpg" alt="BCA Youth Ambassador">
+        <div class="exp-body"><h3>BCA Youth Ambassador</h3><p>Represented BCA programs to the student community and promoted engagement.</p></div>
+      </article>
+
+      <article class="exp-card pre-reveal slide-up" data-type="exp" data-id="exp5" tabindex="0">
+        <img src="images/volley.PNG" alt="Volleyball">
+        <div class="exp-body"><h3>Public Relations — Volleyball</h3><p>Managed internal communications and content to support team engagement.</p></div>
+      </article>
+
+      <article class="exp-card pre-reveal slide-right" data-type="exp" data-id="exp6" tabindex="0">
+        <img src="images/binus_influencer.PNG" alt="Binus Influencer">
+        <div class="exp-body"><h3>Top 15 Binus Influencer & Ambassador</h3><p>Recognized as a top student influencer and participated in ambassador programs.</p></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer"><a href="index.html">← Back</a></footer>
+
+  <!-- modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-content">
+        <img id="modal-img" src="" alt="detail image">
+        <div class="modal-text">
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+          <p id="modal-meta"></p>
+          <p id="modal-link"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

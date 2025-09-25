@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>May San — Cyber Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+
+  <nav class="nav">
+    <div class="brand"><span class="brand-accent">MAY</span> SAN</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="avatar floating" id="avatar">
+          <img src="images/muka.jpg" alt="May San">
+        </div>
+        <div class="hero-right">
+          <h1 class="hero-title glitch" data-text="Hi — I'm MAY SAN">Hi — I'm MAY SAN</h1>
+          <p class="hero-sub">Tech Enthusiast • Event Organizer • Cyber Curious</p>
+          <p class="hero-desc">
+            A curious learner and natural team player who loves bringing people together through events and projects. Beyond my organizational roles, I’ve been exploring tech and cybersecurity challenges. I enjoy working on ideas that mix creativity, technology, and collaboration — always striving to grow and make an impact.
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="projects.html">See Projects</a>
+            <a class="btn ghost" href="experience.html">My Experience</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="showcase">
+      <h2 class="section-title">Featured Work (click to view details)</h2>
+      <div class="grid">
+        <div class="tile pre-reveal slide-left" data-type="project" data-id="proj1" tabindex="0">
+          <img src="images/proj_ai_koral.jpg" alt="Computational Biology">
+          <div class="tile-info"><h3>Computational Biology</h3><p>AI detects coral health from images.</p></div>
+        </div>
+        <div class="tile pre-reveal slide-up" data-type="project" data-id="proj2" tabindex="0">
+          <img src="images/proj_ai_trash.png" alt="AI Trash">
+          <div class="tile-info"><h3>AI Trash Classifier</h3><p>Model classifies waste types from images.</p></div>
+        </div>
+        <div class="tile pre-reveal slide-right" data-type="project" data-id="proj3" tabindex="0">
+          <img src="images/proj_ctfweb.png" alt="CTF Web">
+          <div class="tile-info"><h3>CTF Registration Web</h3><p>Registration platform for CTF events.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick">
+      <h2 class="section-title">Quick Info</h2>
+      <div class="quick-grid">
+        <div class="info-card pre-reveal slide-left"><h4>Study</h4><p>Computer Science — Cyber Security (BINUS)</p></div>
+        <div class="info-card pre-reveal slide-up"><h4>Skills</h4><p>Leadership · Event Management · Communication · Basic Forensics</p></div>
+        <div class="info-card pre-reveal slide-right"><h4>Contact</h4><p>san.kudo108@gmail.com</p></div>
+      </div>
+    </section>
+
+    <footer class="footer">© 2025 May San — built with ♥ & neon</footer>
+  </main>
+
+  <!-- modal (shared across pages) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-content">
+        <img id="modal-img" src="" alt="detail image">
+        <div class="modal-text">
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+          <p id="modal-meta"></p>
+          <p id="modal-link"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

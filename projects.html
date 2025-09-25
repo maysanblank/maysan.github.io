@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — May San</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  <nav class="nav">
+    <div class="brand"><span class="brand-accent">MAY</span> SAN</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <h1 class="glitch" data-text="PROJECTS">PROJECTS</h1>
+      <p class="muted">Click a project card to view details and proof link.</p>
+    </header>
+
+    <section class="showcase">
+      <div class="grid">
+        <div class="tile pre-reveal slide-left" data-type="project" data-id="proj1" tabindex="0">
+          <img src="images/proj_ai_koral.jpg" alt="AI Coral">
+          <div class="tile-info"><h3>Computational Biology</h3><p>Detecting coral health using AI.</p></div>
+        </div>
+
+        <div class="tile pre-reveal slide-up" data-type="project" data-id="proj2" tabindex="0">
+          <img src="images/proj_ai_trash.png" alt="AI Trash">
+          <div class="tile-info"><h3>AI Trash Classifier</h3><p>Classifies waste types from photos.</p></div>
+        </div>
+
+        <div class="tile pre-reveal slide-right" data-type="project" data-id="proj3" tabindex="0">
+          <img src="images/proj_ctfweb.png" alt="CTF Web">
+          <div class="tile-info"><h3>HCI & SecPro — CTF Web</h3><p>Registration system for CTF participants.</p></div>
+        </div>
+
+        <div class="tile pre-reveal slide-left" data-type="project" data-id="proj4" tabindex="0">
+          <img src="images/proj_mobpentest.jpg" alt="MobPentest">
+          <div class="tile-info"><h3>Mobile Pentest</h3><p>Pentest on two mobile applications.</p></div>
+        </div>
+
+        <div class="tile pre-reveal slide-up" data-type="project" data-id="proj5" tabindex="0">
+          <img src="images/proj_se.png" alt="Software Engineering">
+          <div class="tile-info"><h3>Software Engineering</h3><p>Secure joint-account system to mitigate scams.</p></div>
+        </div>
+
+        <div class="tile pre-reveal slide-right" data-type="project" data-id="proj6" tabindex="0">
+          <img src="images/proj_ctf.png" alt="CTF Writeups">
+          <div class="tile-info"><h3>CTF Writeups</h3><p>Documentation and writeups from competitions.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a href="index.html">← Back</a></footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-content">
+        <img id="modal-img" src="" alt="detail image">
+        <div class="modal-text">
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+          <p id="modal-meta"></p>
+          <p id="modal-link"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
